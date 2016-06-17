@@ -1,13 +1,1 @@
-.review-box {
-  border: solid black 2px;
-}
 
-.star-rating-selection {
-  font-size: 20pt;
-  text-indent: 10px;
-}
-
-.selected-rating {
-  padding: 1px;
-  color: green;
-}

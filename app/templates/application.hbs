@@ -1,6 +1,17 @@
-<h2 id="title">AC's Game Reviews - HEADER HERE</h2>
-{{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'favorites'}}<b class="glyphicon glyphicon-heart"></b> My Favorites{{/link-to}}
+<nav class='navbar navbar-default'>
+ <div class='container-fluid'>
+   <ul class='nav navbar-nav'>
+     <li>{{#link-to 'index'}}<b class="glyphicon glyphicon-home"></b> Home{{/link-to}}</li>
+     <li>{{#link-to 'favorites'}}<b class="glyphicon glyphicon-heart"></b> My Favorites{{/link-to}}</li>
+     <li>{{#link-to 'admin'}}<b class="glyphicon glyphicon-wrench"></b> Admin Access{{/link-to}}</li>
+   </ul>
+ </div>
+</nav>
+
+{{#link-to 'index'}}
+<h2 id="title"><b class="glyphicon glyphicon-knight"></b> AC's Game Reviews <b class="glyphicon glyphicon-king"></b></h2>
+{{/link-to}}
+<hr>
 
 <div class="container">
   {{outlet}}

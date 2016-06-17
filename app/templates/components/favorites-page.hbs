@@ -1,8 +1,19 @@
 {{#if favoritesList.games}}
   <h2>Your Favorites:</h2>
   {{#each favoritesList.games as |game|}}
-    <h5>{{game.title}}</h5>
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="detail-image" src={{game.image}}>
+    </div>
+
+    <div class="col-sm-6">
+      <h5>{{game.title}}</h5>
+      <h5>{{game.developer}}</h5>
+      <h5>{{game.genre}}</h5>
+    </div>
+  </div>
   {{/each}}
+  <h2>Average Review Score of Your Favorite Games: {{favoritesAverageScore}}</h2>
 {{else}}
   <h2>Your favorites list is empty.</h2>
   <h2>Head back to the games list and add some!</h2>

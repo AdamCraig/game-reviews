@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     saveReview() {
       var params = {
         username: this.get('username'),
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
         comment: this.get('comment'),
         time: moment().format('LL'),
         game: this.get('game'),
@@ -19,7 +19,6 @@ export default Ember.Component.extend({
       if (params.rating && params.username && params.comment) {
         this.sendAction('saveReview', params);
         this.set('username', "");
-        this.set('rating', "");
         clearStars();
         this.set('comment', "");
       } else {

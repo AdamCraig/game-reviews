@@ -1,0 +1,69 @@
+.navbar {
+  font-size: 16pt;
+  float: left;
+}
+
+.glyphicon-heart {
+  color: red;
+}
+
+.glyphicon-home {
+  color: blue;
+}
+
+.glyphicon-wrench {
+  color: green;
+}
+
+body {
+  font-family: 'Voltaire', sans-serif;
+}
+
+#title {
+  a {
+    color: black;
+  }
+  text-align: center;
+  font-size: 36pt;
+}
+
+.admin-form {
+  input {
+    width: 75%;
+  }
+}
+
+.game-tile-box {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  img {
+    width: 410px;
+    height: 440px;
+  }
+  h5 {
+    font-size: 18pt;
+  }
+}
+
+.detail-image {
+  width: 100%;
+
+}
+
+.review-box {
+  padding: 10px;
+  margin-top: 10px;
+  border: solid black 2px;
+}
+
+.star-rating-selection {
+  font-size: 20pt;
+  text-indent: 10px;
+}
+
+.selected-rating {
+  padding: 1px;
+  color: red;
+}
