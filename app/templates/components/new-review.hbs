@@ -1,4 +1,4 @@
-<form>
+<form class="review-form">
   <h2>Add A Review For This Game:</h2>
   <div class="form-group">
     <div class="row">
@@ -57,10 +57,10 @@
         <h5>Comments</h5>
       </div>
       <div class="col-xs-8">
-        {{textarea class="new-game-field" value=comment id="comment" class="materialize-textarea"}}
+        {{textarea class="new-review-field" value=comment id="comment"}}
       </div>
     </div>
   </div>
-
-  <button class="game-button btn" {{action 'saveReview'}}>Add Review</button>
+  
+  <button class="review-button btn" {{action 'saveReview'}}>Add Review</button>
 </form>

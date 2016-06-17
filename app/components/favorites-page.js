@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       game.get('reviews').forEach(function(review) {
         reviewCount += 1;
         totalScore += review.get('rating');
-      })
+      });
     });
 
     return (totalScore / reviewCount).toFixed(1);

@@ -5,7 +5,7 @@
     <img class="detail-image" src="{{game.image}}">
   </div>
 
-  <div class="col-sm-7">
+  <div class="col-sm-7 game-info">
     <h3>Genre: <span class="game-info">{{game.genre}}</span></h3>
     <h3>Developer: <span class="game-info">{{game.developer}}</span></h3>
     <br>
@@ -18,7 +18,7 @@
 </div>
 
 <div class="row">
-  <h4>All Reviews For This Game</h4>
+  <h4 class="reviews-header">All Reviews For This Game</h4>
   {{#if game.reviews}}
     {{#each game.reviews as |review|}}
       {{review-tile review=review}}

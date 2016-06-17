@@ -19,10 +19,8 @@ body {
   font-family: 'Voltaire', sans-serif;
 }
 
-#title {
-  a {
-    color: black;
-  }
+.title {
+  color: black;
   text-align: center;
   font-size: 36pt;
 }
@@ -31,6 +29,11 @@ body {
   input {
     width: 75%;
   }
+  font-size: 24pt;
+}
+
+.game-button {
+  font-size: 26pt;
 }
 
 .game-tile-box {
@@ -43,19 +46,64 @@ body {
     height: 440px;
   }
   h5 {
-    font-size: 18pt;
+    color: black;
+    font-size: 22pt;
+  }
+}
+
+.game-tile-box:hover {
+  background-color: black;
+  h5 {
+    color: white;
   }
 }
 
 .detail-image {
   width: 100%;
+}
 
+.game-info {
+  font-size: 22pt;
+}
+
+.add-to-favorites {
+  font-size: 26pt;
+}
+
+.add-to-favorites:hover {
+  opacity: 0.7;
+}
+
+.add-to-favorites:active {
+  padding: 5px;
+  border: dotted black 3px;
+}
+
+.reviews-header {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 36pt;
 }
 
 .review-box {
   padding: 10px;
   margin-top: 10px;
   border: solid black 2px;
+}
+
+.review-form {
+  border: solid black 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  h2 {
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+    font-size: 22pt;
+  }
+  font-size: 22pt;
 }
 
 .star-rating-selection {
@@ -66,4 +114,35 @@ body {
 .selected-rating {
   padding: 1px;
   color: red;
+}
+
+.new-review-field {
+  width: 100%;
+  height: 300px;
+}
+
+.review-button {
+  font-size: 36pt;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.review-button:hover {
+  opacity: 0.7;
+}
+
+.review-button:active {
+  padding: 5px;
+  border: dotted black 3px;
+}
+
+.favorite-title {
+  margin-top: 50px;
+  font-size: 36pt;
+  text-align: center;
+}
+
+.favorite-box {
+  margin-top: 20px;
+  padding: 20px;
 }
