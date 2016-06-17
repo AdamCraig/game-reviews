@@ -2,7 +2,12 @@
   border: solid black 2px;
 }
 
+.star-rating-selection {
+  font-size: 20pt;
+  text-indent: 10px;
+}
+
 .selected-rating {
-  background-color: black;
-  color: red;
+  padding: 1px;
+  color: green;
 }
