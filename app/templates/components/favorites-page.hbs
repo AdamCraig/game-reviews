@@ -1,0 +1,9 @@
+{{#if favoritesList.games}}
+  <h2>Your Favorites:</h2>
+  {{#each favoritesList.games as |game|}}
+    <h5>{{game.title}}</h5>
+  {{/each}}
+{{else}}
+  <h2>Your favorites list is empty.</h2>
+  <h2>Head back to the games list and add some!</h2>
+{{/if}}

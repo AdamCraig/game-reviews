@@ -16,14 +16,14 @@ export default Ember.Component.extend({
         game: this.get('game'),
       };
 
-      if (params.rating) {
+      if (params.rating && params.username && params.comment) {
         this.sendAction('saveReview', params);
         this.set('username', "");
         this.set('rating', "");
         clearStars();
         this.set('comment', "");
       } else {
-        alert("Please select a star rating for your review before submitting.");
+        alert("Please enter a username, star rating and comment for your review before submitting.");
       }
 
     },

@@ -11,15 +11,19 @@
     <br>
     <h4>Platform(s): <span class="game-info">{{game.platform}}</span></h4>
     <br>
-    <button {{action 'addToFavorites' game}} class="btn add-to-favorites"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Favorites</button>
+    <button {{action 'addToFavorites' game}} class="btn add-to-favorites"><span class="glyphicon glyphicon-heart"></span> Add To Favorites</button>
   </div>
 </div>
 
 <div class="row">
   <h4>All Reviews For This Game</h4>
-  {{#each game.reviews as |review|}}
-    {{review-tile review=review}}
-  {{/each}}
+  {{#if game.reviews}}
+    {{#each game.reviews as |review|}}
+      {{review-tile review=review}}
+    {{/each}}
+  {{else}}
+    <h4>There are no submitted reviews for this game. Be the first and add one below!</h4>
+  {{/if}}
 </div>
 
 {{new-review saveReview="saveReview" game=game}}
