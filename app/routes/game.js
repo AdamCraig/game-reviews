@@ -7,9 +7,9 @@ export default Ember.Route.extend({
 
   actions: {
     saveReview(params) {
-      var newReview = this.store.createRecord('feedback', params);
+      var newReview = this.store.createRecord('review', params);
       var game = params.game;
-      game.get('feedbacks').addObject(newReview);
+      game.get('reviews').addObject(newReview);
       newReview.save().then(function() {
         return game.save();
       });

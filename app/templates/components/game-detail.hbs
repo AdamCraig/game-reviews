@@ -1,11 +1,11 @@
 <h2>{{game.title}}</h2>
 <br>
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-sm-5">
     <img class="detail-image" src="{{game.image}}">
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-sm-7">
     <h3>Genre: <span class="game-info">{{game.genre}}</span></h3>
     <h3>Developer: <span class="game-info">{{game.developer}}</span></h3>
     <br>
@@ -14,3 +14,12 @@
     <button {{action 'addToFavorites' game}} class="btn add-to-favorites"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Favorites</button>
   </div>
 </div>
+
+<div class="row">
+  <h4>All Reviews For This Game</h4>
+  {{#each game.reviews as |review|}}
+  {{review-tile review=review}}
+  {{/each}}
+</div>
+
+{{new-review saveReview="saveReview" game=game}}
