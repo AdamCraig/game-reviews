@@ -1,0 +1,59 @@
+<form>
+  <h2 class="add-an-game-title">Add A Game</h2>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-4">
+        <h5>Game Title</h5>
+      </div>
+      <div class="col-xs-8">
+        {{input class="new-game-field" value=title id="title"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-4">
+        <h5>Developer</h5>
+      </div>
+      <div class="col-xs-8">
+        {{input class="new-game-field" value=developer id="developer"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-4">
+        <h5>Platform</h5>
+      </div>
+      <div class="col-xs-8">
+        {{input class="new-game-field" value=platform id="platform"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-4">
+        <h5>Genre</h5>
+      </div>
+      <div class="col-xs-8">
+        {{input class="new-game-field" value=genre id="genre"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-4">
+        <h5>Image URL</h5>
+      </div>
+      <div class="col-xs-8">
+        {{input class="new-game-field" value=image id="image"}}
+      </div>
+    </div>
+  </div>
+
+  <button class="game-button btn" {{action 'saveGame'}}>Add Game</button>
+</form>
