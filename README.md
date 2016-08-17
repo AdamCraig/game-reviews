@@ -1,3 +1,7 @@
+![Main Page](screenshot1.png)
+
+![Game Page](screenshot2.png)
+
 # Game Reviews
 
 An Ember 2 web app game review site where users can view and add games, as well as reviews for those games.
